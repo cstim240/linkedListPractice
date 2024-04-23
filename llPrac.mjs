@@ -1,5 +1,6 @@
 // we will use multiple ES6 modules, since Node uses CommonJS modules by default, and we would need to 
 // tell Node to use ES6 modules instead.
+// to do this we change .js to .mjs in the file extension, and add "type": "module" to the package.json file
 
 // Assignment goals: create two classes or factories
 // 1. Linkedlist factor, which will represent the linked list
@@ -232,3 +233,7 @@ export function LinkedList(){
     }
 }
 
+/*
+module.exports = {LinkedList, Node}; //exporting the LinkedList and Node factories
+this is for testing using CommonJS using Node.js
+*/
